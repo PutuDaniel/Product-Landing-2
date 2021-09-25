@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing</title>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+<div class="image" id="image">
+    <img src="https://rog.asus.com/dist/img/rog-logo@3x.png" id="header-img"></img> 
+</div>
+
+<body id="home">
+    <div class="container" id="header">
+        <nav class="menu" id="nav-bar">
+            <div class="menu-toggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+    </div>
+
+    <div class="brand">
+        <h1>Asus</h1>
+    </div>
+
+    <ul>
+        <li><a href="https://rog.asus.com/id/" class="nav-link">Home</a></li>
+        <li><a href="https://rog.asus.com/id/laptops/rog-zephyrus/2021-rog-zephyrus-m16-series/"class="nav-link">Produk</a></li>
+        <li><a href="https://rog.asus.com/microsite/ROG-Laptop-Display-Leadership/id/"class="nav-link">Inovasi</a></li>
+        <li><a href="https://www.asus.com/id/microsite/AsusStore/?utm_source=asuswebsite&utm_medium=homepagebanner&utm_campaign=21q3_biggerdreamwiderscreen_id"class="nav-link">Store</a></li>
+    </ul>
+    </nav>
+
+    <div class="header">
+        <div class="hero">
+            <img src="https://dlcdnwebimgs.asus.com/gain/228535AB-3629-4810-9854-C2FA1D2AEDCB/w1000/h732" id="header-img">
+            <img src="https://dlcdnwebimgs.asus.com/gain/4AE4BF49-44F7-4003-8DF3-1690B9980BF5/w1000/h732" id="img-header">
+            <h2 class="heading">Asus ROG</h2>
+            <p class="item">Asus ROG M16</p>
+    </div>
+
+    <div class="features feature-1">
+        <h4 class="text">ROG M16</h4>
+    </div>
+
+    <div class="features feature-1">
+        <h4 class="price">IDR 26.999.000 </h4>
+    </div>
+
+    <h4 class="text">(Windows 10 Home/Intel® Core™ i7-11800H/RTX3050Ti_V4G/8G*2/512G/165Hz/Office)</h4>
+
+    <div class="features feature-2">
+        <h4 class="price">IDR 31.999.000 </h4>
+    </div>
+
+    <h4 class="text">(Windows 10 Home/Intel® Core™ i7-11800H/RTX3060_V6G/8G*2/1TB/165Hz/Office)
+    </h4>
+
+    <div class="features feature-3">
+        <h4 class="price">IDR 35.999.000 </h4>
+    </div>
+
+    <h4 class="text">(10 Home/Intel® Core™ i9-11900H/RTX3060_V6G/8G*2/1TB/165Hz/Office)</h4>
+
+    <br></br>
+    <section class="Video" id="video">
+        <iframe
+        style="z-index: -1"
+          id="video"
+         width="560" 
+         height="315"
+          src="https://www.youtube.com/embed/v29t-tTNUEg" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+ </section>
+
+ 
+
+ <section class="gallery" id="gallery">
+    <h2>Gallery</h2>
+    <img src="https://dlcdnwebimgs.asus.com/gain/800565A1-B2F9-4B27-8842-84D2765E70A5/w1000/h732" alt="" />
+    <img src="https://dlcdnwebimgs.asus.com/gain/C13CF776-5598-489A-BEEA-65656E6515F1/w1000/h732" alt="" />
+    <img src="https://dlcdnwebimgs.asus.com/gain/594C9693-8F39-468B-B20E-28948DEC2869/w1000/h732" alt="" />
+    <img src="https://dlcdnwebimgs.asus.com/gain/E5235B70-C3BD-4FD5-A7EB-8C92055B3A50/w717/h525/w230" alt="" />
+    <img src="https://dlcdnwebimgs.asus.com/gain/B28F9B88-11D1-4FF0-A901-FA79C1F2FA13/w717/h525/w230" alt="" />
+    <img src="https://dlcdnwebimgs.asus.com/gain/FA39B49E-7B0B-427B-925C-A17652029386/w717/h525/w230" alt="" />
+    <img src="https://dlcdnwebimgs.asus.com/gain/2177AD12-96AB-4534-9571-FDE6BD2699AE/w717/h525/w230" alt="" />
+    <img src="https://dlcdnwebimgs.asus.com/gain/804D26F2-EA51-4FBF-8DF3-F4DF48AF4BCB/w717/h525/w230" alt="" />
+    <img src="https://dlcdnwebimgs.asus.com/gain/7330E1BD-444B-4375-9E79-712889B882D8/w750/h470" alt="" />
+  </section>
+ 
+ <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav ul');
+    const span = document.querySelectorAll('.menu-toggle span');
+
+    menuToggle.addEventListener('click', function () {
+      nav.classList.toggle('slide');
+      span.forEach((s) => {
+        s.classList.toggle('slide');
+      });
+    });
+  </script>
+
+</body>
+</html>
